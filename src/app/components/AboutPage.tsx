@@ -1,71 +1,87 @@
-import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Button } from './ui/button';
 import { Card, CardContent } from './ui/card';
-import { Target, Eye, Heart, Award, Users, TrendingUp } from 'lucide-react';
+import { Shield, Award, Lightbulb, Users, Globe, Target, Eye } from 'lucide-react';
 import { ImageWithFallback } from './ui/ImageWithFallback';
+
+import mutisoImg from '../../assets/mutiso1.jpg';
+import khamalaImg from '../../assets/khamala1.jpg'
+import edgarImg from '../../assets/edgar3.jpg';
+import manuImg from '../../assets/manu1.jpg';
+import faithImg from '../../assets/faith2.jpg';
+
+
 
 export function AboutPage() {
   const navigate = useNavigate();
 
   const values = [
     {
-      icon: Target,
-      title: 'Excellence',
-      description: 'We strive for excellence in everything we do, providing top-tier mentorship and resources.'
+      icon: Shield,
+      title: 'Integrity and Accountability',
+      description: 'We uphold the highest standards of honesty and take full responsibility for our actions.'
     },
     {
-      icon: Heart,
-      title: 'Empowerment',
-      description: 'We believe in empowering young entrepreneurs to achieve their full potential.'
+      icon: Award,
+      title: 'Courageous Leadership',
+      description: 'Nurturing leaders who are bold enough to challenge the status quo and drive change.'
+    },
+    {
+      icon: Lightbulb,
+      title: 'Innovation and Creativity',
+      description: 'Encouraging "out-of-the-box" thinking to solve complex business and societal problems.'
     },
     {
       icon: Users,
-      title: 'Community',
-      description: 'Building a supportive community where entrepreneurs can grow together.'
+      title: 'Inclusivity',
+      description: 'Creating an environment where everyone, regardless of background, has equal opportunity to thrive.'
     },
     {
-      icon: TrendingUp,
-      title: 'Innovation',
-      description: 'Encouraging innovative thinking and creative problem-solving.'
+      icon: Globe,
+      title: 'Community Impact',
+      description: 'Ensuring that our entrepreneurial ventures contribute positively to society.'
     }
   ];
 
   const team = [
     {
-      name: 'James Kariuki',
+      name: 'Onesmus Mutiso',
       role: 'Founder & CEO',
-      image: 'https://images.unsplash.com/photo-1507099985932-87a4520ed1d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx5b3VuZyUyMGVudHJlcHJlbmV1cnMlMjBtZWV0aW5nfGVufDF8fHx8MTc2NjU3ODI2OHww&ixlib=rb-4.1.0&q=80&w=1080',
-      bio: 'Serial entrepreneur with 15+ years of experience in building successful startups.'
+      image: mutisoImg,
+      bio: 'Visionary leader dedicated to nurturing the next generation of African entrepreneurs.'
     },
     {
-      name: 'Mary Wanjiru',
-      role: 'Director of Programs',
-      image: 'https://images.unsplash.com/photo-1574593749297-cb33a69cd8d4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb3RpdmF0aW9uYWwlMjBzcGVha2luZ3xlbnwxfHx8fDE3NjY1NzgyNjh8MA&ixlib=rb-4.1.0&q=80&w=1080',
-      bio: 'Expert in entrepreneurship education and youth development programs.'
+      name: 'Edgar Elmut',
+      role: 'Chief Operations Officer (COO)',
+      image: edgarImg,
+      bio: 'Operations expert focused on scaling our hub\'s impact across higher learning institutions.'
     },
     {
-      name: 'Peter Ochieng',
-      role: 'Head of Mentorship',
-      image: 'https://images.unsplash.com/photo-1761933799610-c9a75f115794?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMG1lbnRvcnNoaXB8ZW58MXx8fHwxNzY2NTc4MjY4fDA&ixlib=rb-4.1.0&q=80&w=1080',
-      bio: 'Former Fortune 500 executive now dedicated to nurturing the next generation of entrepreneurs.'
+      name: 'Clifton Khamala',
+      role: 'Chief Technical Officer (CTO)',
+      image: khamalaImg,
+      bio: 'Driving technical innovation and providing robust support for young skilled and unskilled innovators.'
     },
     {
-      name: 'Linda Akinyi',
-      role: 'Community Manager',
-      image: 'https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWFtJTIwY29sbGFib3JhdGlvbnxlbnwxfHx8fDE3NjY0OTA2ODB8MA&ixlib=rb-4.1.0&q=80&w=1080',
-      bio: 'Passionate about building connections and fostering collaborative environments.'
+      name: 'Emmanuel John',
+      role: 'Chief Marketing Officer (CMO)',
+      image: manuImg,
+      bio: 'Strategic marketer connecting our entrepreneurs with vital market linkages.'
+    },
+    {
+      name: 'Faith Lechuta',
+      role: 'Chief Financial Officer (CFO)',
+      image: faithImg,
+      bio: 'Ensuring financial sustainability and integrity in all our entrepreneurial trainings and programs.'
     }
   ];
 
   const milestones = [
-    { year: '2018', event: 'Young Entrepreneurship Hub Founded' },
-    { year: '2019', event: 'Mentored First 100 Entrepreneurs' },
-    { year: '2020', event: 'Launched Virtual Programs During Pandemic' },
-    { year: '2021', event: 'Expanded to 5 African Countries' },
-    { year: '2022', event: 'Reached 500+ Successful Businesses' },
-    { year: '2023', event: 'Launched Partnership Program' },
-    { year: '2024', event: 'Opened Innovation Hub in Nairobi' }
+    { year: '2025', event: 'Young Entrepreneurship Hub Founded' },
+    { year: '2026', event: 'Mentored First 5 Entrepreneurs' },
+    { year: '2026', event: 'Launched Virtual Programs During Pandemic' },
+    { year: '2026', event: 'Reached 5+ Successful Businesses' },
+    { year: '2026', event: 'Launched Partnership Program' },
   ];
 
   return (
@@ -93,10 +109,10 @@ export function AboutPage() {
                   Young Entrepreneurship Hub was born from a simple observation: young people have incredible ideas but often lack the support, mentorship, and resources to turn those ideas into successful businesses.
                 </p>
                 <p>
-                  Founded in 2018, we started with a small group of mentors and a handful of aspiring entrepreneurs. Today, we've grown into a thriving community of over 500 entrepreneurs, 50+ mentors, and countless success stories.
+                  Founded in 2025, we started with a small group of mentors and a handful of aspiring entrepreneurs. Today, we've grown into a thriving community of over 220 entrepreneurs, 5+ mentors, and countless success stories.
                 </p>
                 <p>
-                  Our mission has remained constant: to empower young entrepreneurs with the knowledge, skills, connections, and confidence they need to build sustainable, impactful businesses.
+                  Our mission has remained constant: To empower young people in higher learning institutions both skilled and unskilled by providing practical entrepreneurial trainings, mentorship, technical support and market linkage.
                 </p>
                 <p>
                   We believe that entrepreneurship is not just about building businesses—it's about creating opportunities, solving problems, and making a positive impact on communities.
@@ -113,12 +129,12 @@ export function AboutPage() {
             </div>
             <div className="relative">
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWFtJTIwY29sbGFib3JhdGlvbnxlbnwxfHx8fDE3NjY0OTA2ODB8MA&ixlib=rb-4.1.0&q=80&w=1080"
-                alt="Team collaboration"
+                src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=2070&auto=format&fit=crop"
+                alt="Young African entrepreneurs collaborating"
                 className="rounded-lg shadow-2xl w-full h-[500px] object-cover"
               />
               <div className="absolute -bottom-6 -left-6 bg-secondary p-6 rounded-lg shadow-xl">
-                <div className="text-4xl font-bold text-black">500+</div>
+                <div className="text-4xl font-bold text-black">220+</div>
                 <div className="text-black">Entrepreneurs</div>
               </div>
             </div>
@@ -137,7 +153,7 @@ export function AboutPage() {
                 </div>
                 <h3 className="text-2xl mb-4">Our Mission</h3>
                 <p className="text-muted-foreground">
-                  To empower young entrepreneurs across Africa with world-class mentorship, resources, and community support to build successful, sustainable businesses that create positive change.
+                  To empower young people in higher learning institutions both skilled and unskilled by providing practical entrepreneurial trainings, mentorship, technical support and market linkage.
                 </p>
               </CardContent>
             </Card>
@@ -149,7 +165,7 @@ export function AboutPage() {
                 </div>
                 <h3 className="text-2xl mb-4">Our Vision</h3>
                 <p className="text-muted-foreground">
-                  A thriving Africa where every young person with entrepreneurial ambition has the opportunity, support, and resources to transform their ideas into impactful businesses.
+                  To become a leading young driven hub that nurtures innovation, self-reliance and impactful entrepreneurs.
                 </p>
               </CardContent>
             </Card>

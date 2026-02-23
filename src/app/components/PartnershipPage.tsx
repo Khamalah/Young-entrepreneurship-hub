@@ -243,7 +243,7 @@ export function PartnershipPage() {
                         type="tel"
                         value={formData.phone}
                         onChange={(e) => handleInputChange('phone', e.target.value)}
-                        placeholder="+254 700 816 697"
+                        placeholder="+254 712345678"
                         required
                       />
                     </div>
@@ -305,7 +305,7 @@ export function PartnershipPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 max-w-6xl mx-auto">
+          {/* <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 max-w-6xl mx-auto">
             {currentPartners.map((partner, index) => (
               <div
                 key={index}
@@ -314,7 +314,7 @@ export function PartnershipPage() {
                 <span className="text-sm">{partner}</span>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
       </section>
 

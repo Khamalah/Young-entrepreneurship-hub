@@ -26,7 +26,7 @@ export function ContactPage() {
     {
       icon: MapPin,
       title: 'Visit Us',
-      content: '123 Business Street, Nairobi, Kenya',
+      content: 'Kisii University, Kisii, Kenya',
       link: 'https://maps.google.com'
     },
     {
@@ -204,7 +204,7 @@ export function ContactPage() {
                       <Input
                         value={formData.name}
                         onChange={(e) => handleInputChange('name', e.target.value)}
-                        placeholder="John Doe"
+                        placeholder="Your Name"
                         required
                       />
                     </div>
@@ -216,7 +216,7 @@ export function ContactPage() {
                           type="email"
                           value={formData.email}
                           onChange={(e) => handleInputChange('email', e.target.value)}
-                          placeholder="john@example.com"
+                          placeholder="email@example.com"
                           required
                         />
                       </div>
@@ -226,7 +226,7 @@ export function ContactPage() {
                           type="tel"
                           value={formData.phone}
                           onChange={(e) => handleInputChange('phone', e.target.value)}
-                          placeholder="+254 700 816 697"
+                          placeholder="+254 712345678"
                         />
                       </div>
                     </div>
@@ -286,7 +286,7 @@ export function ContactPage() {
                   <div className="text-center p-6">
                     <MapPin className="w-12 h-12 mx-auto mb-4 text-primary" />
                     <p className="text-muted-foreground">
-                      123 Business Street, Nairobi, Kenya
+                      Kisii University, Kisii, Kenya
                     </p>
                     <Button
                       variant="outline"

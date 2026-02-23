@@ -113,7 +113,7 @@ export function ServicesPage() {
     },
     {
       name: 'Growth',
-      price: 'KES 5,000/month',
+      price: 'KES /month',
       description: 'For serious entrepreneurs ready to scale',
       features: [
         'All Starter benefits',
@@ -128,7 +128,7 @@ export function ServicesPage() {
     },
     {
       name: 'Premium',
-      price: 'KES 15,000/month',
+      price: 'KES /month',
       description: 'Complete support for high-growth ventures',
       features: [
         'All Growth benefits',

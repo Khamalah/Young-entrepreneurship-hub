@@ -48,13 +48,14 @@ export function HomePage({ isLoggedIn = false }: HomePageProps) {
   ];
 
   const stats = [
-    { number: '...+', label: 'Entrepreneurs Mentored' },
-    { number: '...', label: 'Workshops Conducted' },
-    { number: '...+', label: 'Business Partners' },
+    { number: '5+', label: 'Entrepreneurs Mentored' },
+    /*  { number: '', label: 'Workshops Conducted' }, */
+    { number: '3+', label: 'Webinars Conducted' },
+    /* { number: '', label: 'Business Partners' }, */
     { number: '95%', label: 'Success Rate' }
   ];
 
-  const testimonials = [
+  /* const testimonials = [
     {
       name: 'Khamalah Cliff',
       role: 'Tech Startup Founder',
@@ -73,7 +74,7 @@ export function HomePage({ isLoggedIn = false }: HomePageProps) {
       content: 'From idea to impact - this hub gave me the tools, confidence, and connections to make a real difference.',
       image: 'https://images.unsplash.com/photo-1574593749297-cb33a69cd8d4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb3RpdmF0aW9uYWwlMjBzcGVha2luZ3xlbnwxfHx8fDE3NjY1NzgyNjh8MA&ixlib=rb-4.1.0&q=80&w=1080'
     }
-  ];
+  ]; */
 
   return (
     <div className="w-full">
@@ -271,7 +272,7 @@ export function HomePage({ isLoggedIn = false }: HomePageProps) {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          {/* <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {testimonials.map((testimonial, index) => (
               <Card key={index} className="relative">
                 <CardContent className="p-6">
@@ -291,7 +292,7 @@ export function HomePage({ isLoggedIn = false }: HomePageProps) {
                 </CardContent>
               </Card>
             ))}
-          </div>
+          </div> */}
         </div>
       </section>
 

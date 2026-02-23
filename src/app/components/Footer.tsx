@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Logo } from './Logo';
-import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
+import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin, MessageCircle } from 'lucide-react';
 import { Input } from './ui/input';
 import { Button } from './ui/button';
 
@@ -9,7 +9,7 @@ export function Footer() {
   const handleNewsletterSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Newsletter subscription logic would go here
-    alert('Thank you for subscribing to our newsletter!');
+    alert('Module under construction...thank you for your patience!');
   };
 
   return (
@@ -22,7 +22,7 @@ export function Footer() {
               <Logo className="[&_span]:text-white" />
             </div>
             <p className="text-gray-300 mb-6 text-sm leading-relaxed">
-              Empowering young entrepreneurs to turn their dreams into reality through mentorship, education, and support.
+              Empowering young people in higher learning institutions through practical entrepreneurial trainings, mentorship, and technical support.
             </p>
             <div className="flex gap-3">
               <a href="#" className="w-8 h-8 rounded-full bg-primary hover:bg-primary/90 transition-colors flex items-center justify-center text-white">
@@ -33,6 +33,9 @@ export function Footer() {
               </a>
               <a href="#" className="w-8 h-8 rounded-full bg-primary hover:bg-primary/90 transition-colors flex items-center justify-center text-white">
                 <Instagram className="w-4 h-4" />
+              </a>
+              <a href="https://whatsapp.com/channel/0029VbBcz1bJP210iNGPFL3I" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-primary hover:bg-primary/90 transition-colors flex items-center justify-center text-white" title="Join our WhatsApp Channel">
+                <MessageCircle className="w-4 h-4" />
               </a>
               <a href="#" className="w-8 h-8 rounded-full bg-primary hover:bg-primary/90 transition-colors flex items-center justify-center text-white">
                 <Linkedin className="w-4 h-4" />
